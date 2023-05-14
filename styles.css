@@ -61,6 +61,32 @@ body {
     align-items: center;
     justify-content: center;
 }
+.zapis {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100px;
+    width: 100px;
+    background-color: #68816e;
+    border-radius: 50%;
+    box-shadow: 0 0 18px 3px #68816e;
+}
+.zapis a {
+    padding: 40px 0;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.zapis a:link {
+    color: #6afbbf;
+    text-decoration: none;
+}
 body .menu nav:hover a {
     opacity: 0.25;
 }
@@ -137,8 +163,11 @@ p {
     background-size: cover;
     background-position: center;
 }
-.main_poster > h1 {
+.main_poster div:first-child {
     padding: 190px 0 100px;
+}
+.main_poster > h1 {
+    height: 40px;
     letter-spacing: 13px;
     font-size: 36px;
     font-weight: 600;
@@ -151,6 +180,7 @@ p {
     margin: 0px;
     padding: 30px;
     background-color: var(--blurred-background-color);
+    box-sizing: border-box;
 }
 .about :is(h1, p) {
     font-size: 1em;
@@ -183,9 +213,6 @@ p {
     margin-top: 0;
     margin-bottom: 40px;
 }
-.services p {
-    margin-top: 20px;
-}
 .services .flex > div {
     display: flex;
     flex-direction: column;
@@ -204,12 +231,20 @@ p {
 }
 .services__flex div {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     width: 100%;
 
     font-size: 1em;
+    line-height: 25px;
+    text-align: left;
     color: #6c7279;
+}
+.services__flex div span:first-child {
+    width: 250px;
+}
+.services__flex div span:last-child {
+    width: 80px;
 }
 
 .quote {
@@ -537,6 +572,13 @@ iframe {
     }
     .menu a {
         width: 100px;
+    }
+    .zapis {
+        height: 80px;
+        width: 80px;
+    }
+    .zapis a {
+        font-size: 10px;
     }
     .services img {
         height: 60px;
