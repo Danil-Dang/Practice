@@ -87,9 +87,6 @@ body {
     color: #6afbbf;
     text-decoration: none;
 }
-.zapis a:visited {
-    color: #6afbbf;    
-}
 body .menu nav:hover a {
     opacity: 0.25;
 }
